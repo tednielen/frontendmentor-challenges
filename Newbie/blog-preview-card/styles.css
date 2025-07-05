@@ -1,0 +1,106 @@
+:root {
+    /*colors*/
+
+
+    --Yellow: hsl(47, 88%, 63%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+
+    /*font*/
+
+    --Fontsize: 16px;
+    --font-family: figtree;
+}
+
+* {
+    font-size: var(--Fontsize);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--Yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+main {
+    background-color: var(--White);
+    border-radius: 1rem;
+    border: 0.1rem solid var(--Gray-950);
+    box-shadow: 0.5rem 0.5rem var(--Gray-950), 0.5rem 0.5rem var(--Gray-950);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+
+}
+
+
+span {
+    background-color: var(--Yellow);
+    padding: .3rem;
+    border-radius: .5rem;
+    font-family: var(--font-family);
+    font-size: .7rem;
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+.publish-date {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: var(--Fontsize);
+}
+
+
+h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 1.4rem;
+
+}
+
+h1:hover {
+    color: var(--Yellow);
+    transition: 0.3s;
+}
+
+.content {
+
+    font-family: var(--font-family);
+    font-size: var(--Fontsize);
+    opacity: 60%;
+}
+
+
+.card-fig {
+
+    border-radius: 1rem;
+}
+
+.profile {
+    display: inline-flex;
+    align-items: center;
+
+    .photo {
+        margin: 1rem;
+        max-width: 2.5rem;
+    }
+
+    .greg-name {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: var(--Fontsize);
+    }
+
+
+}
