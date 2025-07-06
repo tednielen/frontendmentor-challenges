@@ -1,0 +1,71 @@
+:root {
+    /* Breakpoints */
+    --mobile-breakpoint: 375px;
+    --tablet-breakpoint: 1440;
+
+    /*colors*/
+
+    --White: hsl(0, 0%, 100%);
+
+    --Slate-300: hsl(212, 45%, 89%);
+    --Slate-500: hsl(216, 15%, 48%);
+    --Slate-900: hsl(218, 44%, 22%);
+
+    /*font*/
+
+    --Fontsize: 16px;
+    --font-family: outfit;
+}
+
+* {
+    font-size: var(--Fontsize);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    background-color: var(--Slate-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    background-color: var(--White);
+    border-radius: 1rem;
+    max-width: 22rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+
+}
+
+.code-img {
+    border-radius: 1rem;
+    width: 20rem;
+}
+
+.first-para {
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: var(--Slate-900);
+    font-size: 1.5rem;
+
+}
+
+.second-para {
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--Slate-500);
+    font-size: 1.02rem;
+    margin-bottom: 2rem;
+    opacity: 80%;
+
+}
