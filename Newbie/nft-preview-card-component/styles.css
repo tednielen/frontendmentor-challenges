@@ -13,4 +13,118 @@
     --Blue-900: hsl(216, 50%, 16%);
     --Blue-800: hsl(215, 32%, 27%);
     --White: hsl(0, 0%, 100%);
+
+    /*font*/
+
+    --Fontsize: 18px;
+    --fontfamily: outfit;
+}
+
+
+* {
+    font-size: var(--Fontsize);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--Blue-950);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+main {
+    background-color: var(--Blue-900);
+    border-radius: 0.7rem;
+    max-width: 23rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem;
+    gap: 1rem;
+}
+
+.equilibrium-img {
+    border-radius: 0.7rem;
+    width: 20rem;
+}
+
+.equilibrium {
+    font-family: var(--fontfamily);
+    color: var(--White);
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.equilibrium-col {
+    font-family: var(--fontfamily);
+    color: var(--Blue-500);
+    opacity: 60%;
+    font-size: 1.1rem;
+    font-weight: 400;
+
+}
+
+.eth-symbol {
+    margin-right: .2rem;
+}
+
+.eth-digit {
+    font-family: var(--fontfamily);
+    color: var(--Cyan-400);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.eth-days {
+    font-family: var(--fontfamily);
+    color: var(--Blue-500);
+    opacity: 60%;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.horizontal-line {
+    border: none;
+    border-top: .01rem solid var(--White);
+    opacity: 20%;
+    width: 97%;
+
+}
+
+.profile {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.profile-pic {
+    max-width: 2rem;
+    border: .1rem solid var(--White);
+    border-radius: 50%;
+    margin-right: 0.2rem;
+}
+
+.creation {
+    font-family: var(--fontfamily);
+    color: var(--Blue-500);
+    opacity: 60%;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.name {
+    font-family: var(--fontfamily);
+    color: var(--White);
+    opacity: 80%;
+    font-size: 1rem;
+    font-weight: 400;
 }
