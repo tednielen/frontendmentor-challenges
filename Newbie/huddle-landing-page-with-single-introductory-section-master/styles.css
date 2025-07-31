@@ -1,0 +1,46 @@
+:root {
+    --Mobile: 375px;
+    --Desktop: 1440px;
+
+    /*Colors*/
+    --Purple-700: hsl(257, 40%, 49%);
+    --Magenta-400: hsl(300, 69%, 71%);
+
+    /*font*/
+
+    --Fontsize: 18px;
+    --font-family: "Poppins", sans-serif;
+    --font-family: "open-sans", sans-serif;
+}
+
+
+* {
+    font-size: var(--Fontsize);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Purple-700);
+    background-image: url('images/bg-desktop.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem 1.5rem;
+    gap: 1rem;
+}
+
+.pic-highlight {
+    display: flexbox;
+    flex-direction: row;
+    align-items: center;
+}
