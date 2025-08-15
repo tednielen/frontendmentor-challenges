@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root {
+    /* primary colors */
+
+
+    --Linear-gradient: linear-gradient (to right hsl(237, 73%, 79%), hsl(238, 63%, 64%));
+
+    /*Neutral*/
+    --Blue-50: hsl(240, 78%, 98%);
+    --Gray-650: hsl(233, 13%, 49%);
+    --Gray-700: hsl(232, 13%, 33%);
+
+    /* Font sizes */
+    --fontFamily: 'Montserrat', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: var(--fontFamily);
+    font-weight: 700;
+    background-color: var(--Blue-50);
+    color: var(--Gray-650);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1,
+h2,
+h4 {
+    color: hsl(232, 13%, 33%);
+}
+
+/* BACKGROUND */
+.background-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.background-top img {
+    height: 100%;
+    max-height: 500px;
+}
+
+.background-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/*  TOGGLE BUTTON   */
+.toggle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.toggle p {
+    font-size: 0.9rem;
+    color: var(--Gray-650);
+}
+
+.toggle-box {
+    position: relative;
+    display: inline-block;
+    width: 3.8rem;
+    height: 2rem;
+    margin: 0 2em;
+}
+
+.toggle-box input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 3rem;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    transition: 0.3s;
+}
+
+.slider:hover {
+    opacity: 0.7;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 1.6rem;
+    width: 1.6rem;
+    left: 0.25rem;
+    bottom: 0.25rem;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0.3s;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(1.6rem);
+    -ms-transform: translateX(1.6rem);
+    transform: translateX(1.6rem);
+}
+
+.monthly {
+    display: none;
+}
+
+.show-monthly .monthly {
+    display: block;
+}
+
+.show-monthly .yearly {
+    display: none;
+}
+
+/*  CARDS  */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+    align-items: center;
+    justify-content: center;
+}
+
+
+.title {
+    font-size: 1rem;
+    color: var(--Gray-700);
+}
+
+.price {
+    font-size: 3.25rem;
+    margin: 0.3rem 0;
+}
+
+.benefits {
+    width: 80%;
+    border-top: 1px solid var(--Gray-650);
+    opacity: 50%;
+}
+
+.benefits li {
+    list-style: none;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--Gray-650);
+}
+
+.button {
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 1rem;
+    width: 80%;
+    padding: 1rem;
+    color: var(--Blue-50);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1rem;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover,
+.button:focus {
+    border-color: var(--Gray-650);
+    background: var(--Blue-50);
+    color: hsl(237, 63%, 64%);
+}
+
+.card-two {
+    background: linear-gradient(to bottom,
+            hsl(236, 72%, 79%),
+            hsl(237, 63%, 64%));
+    color: var(--Blue-50);
+    margin-left: 2rem;
+}
+
+.card-two .title,
+.card-two .price {
+    color: var(--Blue-50);
+}
+
+.card-two .button {
+    border-color: var(--Gray-650);
+    background: var(--Blue-50);
+    color: hsl(237, 63%, 64%);
+}
+
+.card-two .button:hover,
+.card-two .button:focus {
+    background: transparent;
+    color: var(--Blue-50);
+    border-color: var(--Blue-50);
+}
